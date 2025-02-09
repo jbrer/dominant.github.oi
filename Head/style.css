@@ -1,0 +1,679 @@
+/* Auth Section */
+.auth-section {
+	background-color: #333;
+	padding: 50px 0;
+	text-align: center;
+}
+
+.auth-form input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ff6f00;
+	background-color: #333;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.auth-form button {
+	width: 100%;
+}
+
+.auth-form p {
+	margin-top: 10px;
+}
+
+.auth-form a {
+	color: #ff6f00;
+	text-decoration: none;
+}
+
+.auth-form a:hover {
+	text-decoration: underline;
+}
+
+/* Общие стили */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: #fff;
+	background-color: #333;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Header */
+.header {
+	background-color: #ff6f00;
+	padding: 10px 0;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #fff;
+}
+
+.nav-list {
+	list-style: none;
+	display: flex;
+}
+
+.nav-list li {
+	margin-left: 20px;
+}
+
+.nav-list a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+	transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+	color: #333;
+}
+
+/* Hero Section */
+.hero {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.hero-content h2 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+.hero-content p {
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+}
+
+.btn {
+	background-color: #ff6f00;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #e65c00;
+}
+
+/* Products Section */
+.products {
+	background-color: #222;
+	padding: 50px 0;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 2.5rem;
+	margin-bottom: 30px;
+}
+
+.product-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 20px;
+}
+
+.product-item {
+	text-align: center;
+	background-color: #333;
+	padding: 20px;
+	border: 1px solid #ff6f00;
+	transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+	transform: scale(1.05);
+}
+
+.product-item img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.add-to-cart {
+	background-color: #ff6f00;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+	background-color: #e65c00;
+}
+
+/* About Section */
+.about {
+	background-color: #333;
+	padding: 50px 0;
+	text-align: center;
+}
+
+/* Contact Section */
+.contact {
+	background-color: #222;
+	padding: 50px 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ff6f00;
+	background-color: #333;
+	color: #fff;
+	font-size: 1rem;
+}
+
+.contact-form button {
+	width: 100%;
+}
+
+/* Footer */
+.footer {
+	background-color: #ff6f00;
+	text-align: center;
+	padding: 10px 0;
+	font-size: 0.9rem;
+}
+
+/* Auth Section */
+.auth-section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #000, #333);
+}
+
+.auth-form {
+	background-color: #222;
+	padding: 40px 60px;
+	border-radius: 15px;
+	box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+	width: 100%;
+	max-width: 400px;
+	opacity: 0;
+	transform: translateY(-50px);
+	animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.auth-form h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #ff6f00;
+}
+
+.auth-form input {
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 15px;
+	border: none;
+	border-radius: 5px;
+	background-color: #333;
+	color: #fff;
+	font-size: 1rem;
+	transition: all 0.3s ease;
+}
+
+.auth-form input:focus {
+	outline: none;
+	box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+.auth-form button {
+	width: 100%;
+	padding: 15px;
+	border: none;
+	border-radius: 5px;
+	background-color: #ff6f00;
+	color: #fff;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.auth-form button:hover {
+	background-color: #e65c00;
+	box-shadow: 0 0 10px rgba(255, 111, 0, 0.6);
+}
+
+.auth-form p {
+	text-align: center;
+	margin-top: 20px;
+	color: #aaa;
+}
+
+.auth-form a {
+	color: #ff6f00;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.auth-form a:hover {
+	color: #e65c00;
+}
+
+/* Главная кнопка */
+.back-to-home {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background-color: #ff6f00;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0 0 10px rgba(255, 111, 0, 0.6);
+}
+
+.back-to-home:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 20px rgba(255, 111, 0, 0.8);
+}
+
+.back-to-home i {
+	margin-right: 5px;
+}
+
+/* Modal */
+.modal {
+	display: none; /* Скрыто по умолчанию */
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+}
+
+.modal-content {
+	background-color: #222;
+	margin: 15% auto;
+	padding: 20px;
+	border-radius: 10px;
+	width: 300px;
+	box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+.auth-options {
+	list-style: none;
+	padding: 0;
+}
+
+.auth-options li {
+	margin-bottom: 10px;
+}
+
+.auth-options a {
+	text-decoration: none;
+	color: #ff6f00;
+	font-size: 1rem;
+	transition: color 0.3s ease;
+}
+
+.auth-options a:hover {
+	color: #e65c00;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+	color: #ff6f00;
+	text-decoration: none;
+}
+
+/* Анимация выхода */
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+/* Применение анимации к секции авторизации */
+.auth-section {
+	animation-fill-mode: forwards; /* Оставляет элемент невидимым после анимации */
+}
+
+/* Анимация входа */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Применение анимации к секции регистрации */
+.auth-form {
+	animation: fadeIn 0.5s ease-in forwards;
+}
+
+/* Стили для ссылок */
+.auth-form p a {
+	color: #ff6f00; /* Оранжевый цвет */
+	text-decoration: none; /* Убираем подчеркивание */
+	transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+.auth-form p a:hover {
+	color: #e65c00; /* Более темный оттенок оранжевого при наведении */
+}
+
+/* Логотип */
+.logo-container {
+	display: flex;
+	align-items: center; /* Выравнивание по центру вертикально */
+	gap: 5px; /* Отступ между изображением и текстом */
+}
+
+.logo-image {
+	width: 60px; /* Размер логотипа */
+	height: 60px; /* Размер логотипа */
+	object-fit: cover; /* Сохранение пропорций */
+	border-radius: 5px; /* Закругленные углы (опционально) */
+}
+
+/* Текст логотипа */
+.logo-text {
+	font-size: 1.5rem; /* Размер шрифта */
+	font-weight: bold; /* Жирный шрифт */
+	color: #fff; /* Белый цвет */
+	margin: 0; /* Убираем отступы */
+	text-transform: uppercase; /* Принудительное преобразование в верхний регистр */
+}
+
+/* Header */
+.header {
+	background-color: #000; /* Черный фон */
+	padding: 10px 0; /* Отступы для пространства */
+	border-radius: 10px; /* Закругленные углы */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень для объема */
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* Логотип */
+.logo-container {
+	display: flex;
+	align-items: center; /* Выравнивание по центру вертикально */
+	gap: 5px; /* Отступ между изображением и текстом */
+}
+
+.logo-image {
+	width: 60px; /* Размер логотипа */
+	height: 60px; /* Размер логотипа */
+	object-fit: cover; /* Сохранение пропорций */
+	border-radius: 5px; /* Закругленные углы */
+}
+
+/* Надпись "ДОМИНАНТ" */
+.logo-text {
+	font-size: 1.5rem; /* Размер шрифта */
+	font-weight: bold; /* Жирный шрифт */
+	margin: 0; /* Убираем отступы */
+	text-transform: uppercase; /* Принудительное преобразование в верхний регистр */
+}
+
+.orange-part {
+	color: #ff6f00; /* Оранжевый цвет */
+}
+
+.white-part {
+	color: #fff; /* Белый цвет */
+}
+
+/* Навигация */
+.nav-list {
+	list-style: none;
+	display: flex;
+	gap: 20px; /* Отступ между пунктами меню */
+}
+
+.nav-list a {
+	color: #fff; /* Белый цвет ссылок */
+	text-decoration: none; /* Убираем подчеркивание */
+	transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+.nav-list a:hover {
+	color: #ff6f00; /* Оранжевый цвет при наведении */
+}
+
+/* Надпись "ДОМИНАНТ" */
+.logo-text {
+	font-size: 1.5rem; /* Размер шрифта */
+	font-weight: bold; /* Жирный шрифт */
+	margin: 0; /* Убираем отступы */
+	text-transform: uppercase; /* Принудительное преобразование в верхний регистр */
+	display: inline-block; /* Для точного управления отступами */
+}
+
+.orange-part,
+.white-part {
+	display: inline-block; /* Отображаем как строчные блоки */
+	margin: 0; /* Убираем отступы */
+	padding: 0; /* Убираем внутренние отступы */
+}
+
+.orange-part {
+	color: #ff6f00; /* Оранжевый цвет */
+}
+
+.white-part {
+	color: #fff; /* Белый цвет */
+}
+
+/* Header */
+.header {
+	background-color: #000; /* Черный фон */
+	padding: 10px 0; /* Отступы для пространства */
+	border-radius: 0 0 25px 25px; /* Закругление только снизу (25px) */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень для объема */
+}
+
+/* Header */
+.header {
+	background-color: #000; /* Черный фон */
+	padding: 15px 0; /* Увеличим отступы для пространства */
+	border-radius: 0 0 25px 25px; /* Закругление только снизу */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень для объема */
+}
+
+/* Логотип */
+.logo-container {
+	display: flex;
+	align-items: center; /* Выравнивание по центру вертикально */
+	gap: 10px; /* Увеличим отступ между изображением и текстом */
+}
+
+.logo-image {
+	width: 80px; /* Увеличим ширину до 80px */
+	height: auto; /* Сохраняем пропорции */
+	max-height: 100%; /* Ограничиваем максимальную высоту высотой родительского контейнера */
+	object-fit: contain; /* Обеспечиваем сохранение пропорций и вмещение в контейнер */
+	border-radius: 5px; /* Закругленные углы */
+}
+
+/* Надпись "ДОМИНАНТ" */
+.logo-text {
+	font-size: 1.7rem; /* Сlightly увеличим размер шрифта для баланса с новым логотипом */
+	font-weight: bold; /* Жирный шрифт */
+	margin: 0; /* Убираем отступы */
+	text-transform: uppercase; /* Принудительное преобразование в верхний регистр */
+	display: inline-block; /* Для точного управления отступами */
+}
+
+.orange-part,
+.white-part {
+	display: inline-block; /* Отображаем как строчные блоки */
+	margin: 0; /* Убираем отступы */
+	padding: 0; /* Убираем внутренние отступы */
+}
+
+.orange-part {
+	color: #ff6f00; /* Оранжевый цвет */
+}
+
+.white-part {
+	color: #fff; /* Белый цвет */
+}
+
+/* Навигация */
+.nav-list {
+	list-style: none;
+	display: flex;
+	align-items: center; /* Выравнивание по центру */
+	gap: 20px; /* Отступ между пунктами меню */
+	position: relative; /* Для создания подложки под меню */
+}
+
+.nav-list::before {
+	content: '';
+	position: absolute;
+	bottom: -5px; /* Расположение линии под меню */
+	left: 0;
+	width: 100%;
+	height: 2px; /* Толщина линии */
+	background: linear-gradient(90deg, #ff6f00, #00d2ff); /* Градиентная линия */
+	z-index: -1; /* Линия находится под пунктами меню */
+}
+
+.nav-list a {
+	color: #fff; /* Белый цвет текста */
+	text-decoration: none; /* Убираем подчеркивание */
+	font-size: 1rem; /* Размер шрифта */
+	font-weight: 500; /* Полужирный шрифт */
+	position: relative; /* Для создания анимации */
+	transition: color 0.3s ease, transform 0.3s ease; /* Плавные переходы */
+}
+
+/* Анимация при наведении */
+.nav-list a::after {
+	content: '';
+	position: absolute;
+	bottom: -5px; /* Расположение подчеркивания */
+	left: 0;
+	width: 0; /* Ширина подчеркивания изначально 0 */
+	height: 2px; /* Толщина подчеркивания */
+	background: #ff6f00; /* Оранжевый цвет подчеркивания */
+	transition: width 0.3s ease; /* Плавное увеличение ширины */
+}
+
+.nav-list a:hover::after {
+	width: 100%; /* При наведении подчеркивание растягивается на всю ширину */
+}
+
+.nav-list a:hover {
+	color: #00d2ff; /* Синий цвет при наведении */
+	transform: scale(1.1); /* Легкое увеличение при наведении */
+}
+
+/* Эффект неона для активной ссылки */
+.nav-list a.active,
+.nav-list a:active {
+	color: #00d2ff; /* Синий цвет для активной ссылки */
+	box-shadow: 0 0 10px rgba(0, 210, 255, 0.8),
+		/* Неоновый свет */ 0 0 20px rgba(0, 210, 255, 0.6),
+		0 0 40px rgba(0, 210, 255, 0.4);
+}
+
+/* Корзина с иконкой */
+.nav-list a.cart {
+	display: flex;
+	align-items: center; /* Выравнивание иконки и текста */
+	gap: 5px; /* Отступ между иконкой и текстом */
+}
+
+/* Авторизация с эффектом hover */
+#auth-button {
+	position: relative;
+	padding: 5px 10px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#auth-button::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: linear-gradient(90deg, #ff6f00, #00d2ff); /* Градиентный фон */
+	z-index: -1;
+	border-radius: 5px;
+	transition: width 0.3s ease; /* Плавное расширение фона */
+}
+
+#auth-button:hover {
+	color: #000; /* Черный цвет текста при наведении */
+}
+
+#auth-button:hover::before {
+	width: 100%; /* Фон расширяется на всю ширину */
+}
