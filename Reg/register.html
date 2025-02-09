@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dominant - Регистрация</title>
+		<link rel="stylesheet" href="../Head/style.css" />
+	</head>
+	<body>
+		<!-- Кнопка "На главную" -->
+		<a href="../Head/index.html" class="back-to-home">
+			<i class="fas fa-home"></i> На главную
+		</a>
+
+		<!-- Registration Form -->
+		<section class="auth-section">
+			<form id="register-form" class="auth-form">
+				<h2>Регистрация</h2>
+				<input type="text" id="register-name" placeholder="Имя" required />
+				<input type="email" id="register-email" placeholder="Email" required />
+				<input
+					type="password"
+					id="register-password"
+					placeholder="Пароль"
+					required
+				/>
+				<input
+					type="password"
+					id="confirm-password"
+					placeholder="Подтвердите пароль"
+					required
+				/>
+				<button type="submit">Зарегистрироваться</button>
+				<p>Уже есть аккаунт? <a href="login.html">Войти</a></p>
+			</form>
+		</section>
+
+		<!-- JavaScript для валидации формы -->
+		<script>
+			document
+				.getElementById('register-form')
+				.addEventListener('submit', function (event) {
+					event.preventDefault() // Предотвращаем отправку формы
+
+					const name = document.getElementById('register-name').value
+					const email = document.getElementById('register-email').value
+					const password = document.getElementById('register-password').value
+					const confirmPassword =
+						document.getElementById('confirm-password').value
+
+					if (!name || !email || !password || !confirmPassword) {
+						alert('Пожалуйста, заполните все поля.')
+						return
+					}
+
+					if (password !== confirmPassword) {
+						alert('Пароли не совпадают.')
+						return
+					}
+
+					// Здесь можно добавить логику регистрации
+					alert('Вы успешно зарегистрировались!')
+				})
+		</script>
+	</body>
+</html>
